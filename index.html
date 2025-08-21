@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePay - Simple Payment Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">$P</div>
+                    <div class="logo-text">
+                        <h1>SecurePay</h1>
+                        <p>Trusted and Simple Payment Solutions</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Secure Payments Made Simple</h2>
+            <p>Process payments safely and efficiently with our trusted platform.
+                Join thousands of businesses worldwide who rely on SecurePay for their payment needs</p>
+            <a href="#contact" class="cta-button" onclick="scrollToContact()">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose SecurePay</h2>
+            <p class="section-subtitle">Our platform provides everything you need for secure, fast, and reliable payment
+                processing</p>
+
+            <div class="features-grid">
+                <div class="features-card">
+                    <div class="features-icon">🔒</div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Advanced encryption and fraud protection keep your transaction safe. PCI DSS compliant with 24/7
+                        monitoring.</p>
+                </div>
+
+                <div class="features-card">
+                    <div class="features-icon">⚡</div>
+                    <h3>Lighting Fast</h3>
+                    <p>Process payments in seconds with our optimized infrastructure. Real-time transaction processing
+                        worldwide.</p>
+                </div>
+
+                <div class="features-card">
+                    <div class="features-icon">📊</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Detailed reporting and insights to help grow your business. Track performance with
+                        easy-to-understand dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Trusted by businesses of all size around the world</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonials-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "SecurePay transformed our checkout process. Our conversion rate increased by 35% and we haven't
+                        had a single security issue."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sawara Mathur</h4>
+                            <p>CEO, Techstar inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonials-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Easy integration and excellent support. We processed over $1M in our first month without any
+                        problems"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RSS</div>
+                        <div class="author-info">
+                            <h4>Rajdheer singh singhaniya</h4>
+                            <p>CTO,E-commerce plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finally, a payment processor that work as advertised. clean inerface,
+                        reliable service"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <h4>Martin Clark</h4>
+                            <p>Founder,Super Sports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Get Started</h2>
+            <p class="section-subtitle">Contact us today and start processing payments securely</p>
+
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-notice">
+                    <strong>Demo Contact Form:</strong>This is a sample form for demonstration purposes. In a real
+                    application, this would connect to a secure backend service.
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"
+                        placeholder="Tell us about your business and payment processing needs..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SecurePay</h3>
+                    <p>Empowering businesses worldwide with secure, fast, and reliable payment processing solutions.
+                        Join thousands of satisfied customers.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 SecurePay. All rights reserved.| Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
